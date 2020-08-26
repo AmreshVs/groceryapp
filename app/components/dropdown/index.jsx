@@ -18,10 +18,9 @@ export default function Dropdown({ data, selected, onSelect }) {
         underlayColor="#f5f5f5"
         activeOpacity={0.95}
         onPress={() => dropdownItem(item)}
+        key={index}
       >
-        <Text style={styles.contentItem} key={index}>
-          {item.name}
-        </Text>
+        <Text style={styles.contentItem}>{item.name}</Text>
       </TouchableHighlight>
     );
   };
