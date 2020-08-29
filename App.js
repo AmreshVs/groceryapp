@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
-import Checkbox from 'components/checkbox';
+import Coupon from 'components/coupon';
 
 export default function App() {
-  const [checked, setChecked] = useState(false);
+
   return (
     <View style={styles.container}>
-      <Checkbox label="Passport" checked={checked} handleChecked={() => setChecked(!checked)} />
+      <Coupon />
     </View>
   );
 }
