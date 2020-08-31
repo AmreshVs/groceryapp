@@ -1,13 +1,18 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
-import Coupon from 'components/coupon';
+import Chip from 'components/chip';
+import Column from 'components/column';
 
 export default function App() {
 
   return (
     <View style={styles.container}>
-      <Coupon />
+      <Column backgroundColor="red" width="100%">
+        <Chip title="In Progress" color="tomato" />
+        <Chip title="In Progress" color="tomato" />
+        <Chip title="In Progress" color="tomato" />
+      </Column>
     </View>
   );
 }

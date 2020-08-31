@@ -5,7 +5,8 @@ const colors = {
   danger: '#ee1d23',
   black: '#292929',
   white: '#fff',
-  gray: '#ededed'
+  gray: '#ededed',
+  violet: '#5356a5'
 }
 
 export default colors;
