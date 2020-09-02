@@ -1,18 +1,19 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
-import Chip from 'components/chip';
-import Column from 'components/column';
+import OrderProgress from 'components/orderProgress';
+import ProgressItem from 'components/orderProgress/progressItem';
 
 export default function App() {
 
   return (
     <View style={styles.container}>
-      <Column backgroundColor="red" width="100%">
-        <Chip title="In Progress" color="tomato" />
-        <Chip title="In Progress" color="tomato" />
-        <Chip title="In Progress" color="tomato" />
-      </Column>
+      <OrderProgress>
+        <ProgressItem width='15%' label="Placed" />
+        <ProgressItem width='25%' label="Packed" path />
+        <ProgressItem label="on the way" fill={false} path />
+        <ProgressItem label="on the way" fill={false} path />
+      </OrderProgress>
     </View>
   );
 }
@@ -23,6 +24,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     height: '100%',
-    padding: 20
+    padding: 20,
   },
 });

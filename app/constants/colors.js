@@ -6,7 +6,9 @@ const colors = {
   black: '#292929',
   white: '#fff',
   gray: '#ededed',
-  violet: '#5356a5'
+  lite_gray: '#f5f5f5',
+  violet: '#5356a5',
+  text_lite: '#818181'
 }
 
 export default colors;

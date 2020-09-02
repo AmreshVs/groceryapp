@@ -2,6 +2,7 @@ import React from 'react';
 import { View, StyleSheet, TouchableHighlight, Text } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+
 import colors from 'constants/colors';
 
 export default function Checkbox({ label, checked, handleChecked }) {
