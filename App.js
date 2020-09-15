@@ -1,22 +1,21 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import Product from 'components/product';
+import colors from 'constants/colors';
 
-import OrderProgress from 'components/orderProgress';
-import ProgressItem from 'components/orderProgress/progressItem';
 
 export default function App() {
 
   return (
     <View style={styles.container}>
-      <OrderProgress>
-        <ProgressItem width='15%' label="Placed" />
-        <ProgressItem width='25%' label="Packed" path />
-        <ProgressItem label="on the way" fill={false} path />
-        <ProgressItem label="on the way" fill={false} path />
-      </OrderProgress>
+      <Product />
     </View>
   );
 }
+
+library.add(fas);
 
 const styles = StyleSheet.create({
   container: {
@@ -25,5 +24,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     height: '100%',
     padding: 20,
+    backgroundColor: colors.gray
   },
 });

@@ -14,7 +14,6 @@ export default function OrderProgress({ children }) {
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    // flexDirection: 'row',
   },
   scroll: {
     display: 'flex',
